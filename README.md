@@ -46,7 +46,7 @@ Vue.use(audioCompName);
     }
 }
 
-5.我项目的尺寸是720的设计稿  使用了一半大小, 360的分辨率去做的
+5.我项目的尺寸是720的设计稿  使用了一半大小, 360的分辨率去做的,如果觉得可用,请给个star哦
 
 (function(doc, win) {
         var docEl = doc.documentElement,
