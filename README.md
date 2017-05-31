@@ -29,7 +29,7 @@ Vue.use(audioCompName);
 3.在组件中使用方式
 <template>
   <div>
-    <audioPlayerCustom :audioList = 'audioList'></audioPlayerCustom>
+    <audioCompName :audioList = 'audioList'></audioCompName>
   </div>
 </template>
 
