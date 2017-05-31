@@ -13,7 +13,7 @@ vue2里面的全家桶UI库也没有音频组件可以很好的使用.虽然muse
 
 
 可以看下预览图:<br>
-![](http://au-smart.cn/auscience/static/img/audioplayer.png)
+![](http://au-smart.cn/auscience/static/img/微信图片_20170531145922.png)
 
 ```
 使用方式:
