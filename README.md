@@ -3,7 +3,7 @@
 vue2里面的全家桶UI库也没有音频组件可以很好的使用.虽然muse-ui全家桶里面的slider可以作为音频的时间线进行使用,但是和我项目的UI库貌似有冲突.
 
 可以看下预览图:
-![](http://au-smart.cn/auscience/static/img/audioplayer.png)
+http://au-smart.cn/auscience/static/img/audioplayer.png
 
 待续
 
