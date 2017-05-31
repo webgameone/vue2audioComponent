@@ -15,9 +15,10 @@ vue2里面的全家桶UI库也没有音频组件可以很好的使用.虽然muse
 npm install vue2audiocomponent --save-dev
 
 2.使用插件
-
+```
 import audioCompName from 'audioPlayerComponent'
 Vue.use(audioCompName);
+
 
 3.在组件中使用方式
 <template>
@@ -38,4 +39,5 @@ Vue.use(audioCompName);
         }
     }
 }
+```
 
