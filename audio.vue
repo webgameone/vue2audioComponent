@@ -96,6 +96,10 @@
                 var point = ev.offsetX;
                 //通过点击点的位置改变当前音频的播放位置
                 document.querySelector('audio').currentTime = point / widthmax * document.querySelector('audio').duration;
+                if(document.querySelector('audio').currentTime > this.audioList.totalTime)
+                {
+                    document.querySelector('audio').currentTime = this.audioList.totalTime;
+                }
                 //更新播放时间码的显示
                 this.playTimer.innerText = this.getCurrentTime(this.player.currentTime);
             },
@@ -113,6 +117,10 @@
                 left = left > $('.schedule').width() ? $('.schedule').width() : left;
                 $('.currentProgress').css('width', left);
                 document.querySelector('audio').currentTime = left / $('.schedule').width() * document.querySelector('audio').duration;
+                if(document.querySelector('audio').currentTime > this.audioList.totalTime)
+                {
+                    document.querySelector('audio').currentTime = this.audioList.totalTime;
+                }
                 //更新播放时间码的显示
                 this.playTimer.innerText = this.getCurrentTime(this.player.currentTime);
             },
