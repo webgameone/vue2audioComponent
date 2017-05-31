@@ -45,5 +45,20 @@ Vue.use(audioCompName);
         }
     }
 }
+
+5.我项目的尺寸是720的设计稿  使用了一半大小, 360的分辨率去做的
+
+(function(doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 50 * (clientWidth / 360) + 'px';
+                };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
 ```
 
